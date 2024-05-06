@@ -52,12 +52,10 @@ package(default_visibility = ["//visibility:public"])
             "//sw/device/lib/dif:flash_ctrl",
             "//sw/device/lib/dif:gpio",
             "//sw/device/lib/dif:hmac",
-            "//sw/device/lib/dif:i2c",
             "//sw/device/lib/dif:keymgr",
             "//sw/device/lib/dif:kmac",
             "//sw/device/lib/dif:otbn",
             "//sw/device/lib/dif:otp_ctrl",
-            "//sw/device/lib/dif:pattgen",
             "//sw/device/lib/dif:pwrmgr",
             "//sw/device/lib/dif:rv_plic",
             "//sw/device/lib/dif:rv_timer",
@@ -73,7 +71,7 @@ package(default_visibility = ["//visibility:public"])
             "//sw/device/lib/testing/test_framework:ottf_main",
         ],
     )
-    for min in range(0, 23, 10)
+    for min in range(0, 21, 10)
 ]
 
 test_suite(
@@ -115,13 +113,11 @@ opentitan_test(
         "//sw/device/lib/dif:flash_ctrl",
         "//sw/device/lib/dif:gpio",
         "//sw/device/lib/dif:hmac",
-        "//sw/device/lib/dif:i2c",
         "//sw/device/lib/dif:keymgr",
         "//sw/device/lib/dif:kmac",
         "//sw/device/lib/dif:lc_ctrl",
         "//sw/device/lib/dif:otbn",
         "//sw/device/lib/dif:otp_ctrl",
-        "//sw/device/lib/dif:pattgen",
         "//sw/device/lib/dif:pinmux",
         "//sw/device/lib/dif:pwm",
         "//sw/device/lib/dif:pwrmgr",

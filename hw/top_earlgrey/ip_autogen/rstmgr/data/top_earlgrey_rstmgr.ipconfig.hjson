@@ -66,9 +66,6 @@
       spi_host1
       usb
       usb_aon
-      i2c0
-      i2c1
-      i2c2
     ]
     output_rsts:
     [
@@ -343,48 +340,6 @@
         parent: lc_src
         clock: aon
       }
-      {
-        name: i2c0
-        gen: true
-        type: top
-        domains:
-        [
-          "0"
-        ]
-        shadowed: false
-        sw: true
-        path: rstmgr_aon_resets.rst_i2c0_n
-        parent: lc_src
-        clock: io_div4
-      }
-      {
-        name: i2c1
-        gen: true
-        type: top
-        domains:
-        [
-          "0"
-        ]
-        shadowed: false
-        sw: true
-        path: rstmgr_aon_resets.rst_i2c1_n
-        parent: lc_src
-        clock: io_div4
-      }
-      {
-        name: i2c2
-        gen: true
-        type: top
-        domains:
-        [
-          "0"
-        ]
-        shadowed: false
-        sw: true
-        path: rstmgr_aon_resets.rst_i2c2_n
-        parent: lc_src
-        clock: io_div4
-      }
     ]
     leaf_rsts:
     [
@@ -644,48 +599,6 @@
         path: rstmgr_aon_resets.rst_usb_aon_n
         parent: lc_src
         clock: aon
-      }
-      {
-        name: i2c0
-        gen: true
-        type: top
-        domains:
-        [
-          "0"
-        ]
-        shadowed: false
-        sw: true
-        path: rstmgr_aon_resets.rst_i2c0_n
-        parent: lc_src
-        clock: io_div4
-      }
-      {
-        name: i2c1
-        gen: true
-        type: top
-        domains:
-        [
-          "0"
-        ]
-        shadowed: false
-        sw: true
-        path: rstmgr_aon_resets.rst_i2c1_n
-        parent: lc_src
-        clock: io_div4
-      }
-      {
-        name: i2c2
-        gen: true
-        type: top
-        domains:
-        [
-          "0"
-        ]
-        shadowed: false
-        sw: true
-        path: rstmgr_aon_resets.rst_i2c2_n
-        parent: lc_src
-        clock: io_div4
       }
     ]
     rst_ni: lc_io_div4

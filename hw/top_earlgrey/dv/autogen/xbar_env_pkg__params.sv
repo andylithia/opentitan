@@ -88,21 +88,6 @@ tl_device_t xbar_devices[$] = '{
     '{"uart3", '{
         '{32'h40030000, 32'h4003003f}
     }},
-    '{"i2c0", '{
-        '{32'h40080000, 32'h4008007f}
-    }},
-    '{"i2c1", '{
-        '{32'h40090000, 32'h4009007f}
-    }},
-    '{"i2c2", '{
-        '{32'h400a0000, 32'h400a007f}
-    }},
-    '{"pattgen", '{
-        '{32'h400e0000, 32'h400e003f}
-    }},
-    '{"pwm_aon", '{
-        '{32'h40450000, 32'h4045007f}
-    }},
     '{"gpio", '{
         '{32'h40040000, 32'h4004003f}
     }},
@@ -176,10 +161,6 @@ tl_host_t xbar_hosts[$] = '{
         "uart1",
         "uart2",
         "uart3",
-        "i2c0",
-        "i2c1",
-        "i2c2",
-        "pattgen",
         "gpio",
         "spi_device",
         "rv_timer",
@@ -198,7 +179,6 @@ tl_host_t xbar_hosts[$] = '{
         "aon_timer_aon",
         "adc_ctrl_aon",
         "sysrst_ctrl_aon",
-        "pwm_aon",
         "spi_host0",
         "spi_host1",
         "usbdev",
@@ -228,10 +208,6 @@ tl_host_t xbar_hosts[$] = '{
         "uart1",
         "uart2",
         "uart3",
-        "i2c0",
-        "i2c1",
-        "i2c2",
-        "pattgen",
         "gpio",
         "spi_device",
         "rv_timer",
@@ -250,7 +226,6 @@ tl_host_t xbar_hosts[$] = '{
         "aon_timer_aon",
         "adc_ctrl_aon",
         "sysrst_ctrl_aon",
-        "pwm_aon",
         "spi_host0",
         "spi_host1",
         "usbdev",
